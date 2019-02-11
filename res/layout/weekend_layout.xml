@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imag"
+            android:layout_width="150dp"
+            android:layout_height="67dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/gavs" />
+
+        <ImageView
+            android:id="@+id/imag2"
+            android:layout_width="70dp"
+            android:layout_height="99dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="start"
+            android:layout_marginRight="0dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/sss" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center_vertical"
+            android:text="Weekend Attendance"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Employee Id"
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etempid"
+            android:layout_weight=".5"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DuplicateIds,InvalidId"
+            android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Employee Name"
+
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etempname"
+            android:enabled="false"
+            android:layout_weight=".5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="InvalidId"
+            android:text=""/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:textColor="@color/white"
+            app:backgroundTint="@color/buttonColor"
+            android:layout_marginRight="20dp"
+            android:layout_weight=".5"
+            android:id="@+id/btnpunchin"
+            android:text="Punch-In"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:textColor="@color/white"
+            app:backgroundTint="@color/buttonColor"
+            android:layout_marginLeft="20dp"
+            android:layout_weight=".5"
+            android:text="Punch-Out"
+            android:id="@+id/btnpunchout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

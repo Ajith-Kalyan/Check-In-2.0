@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imag"
+                android:layout_width="150dp"
+                android:layout_height="67dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/gavs" />
+
+            <ImageView
+                android:id="@+id/imag2"
+                android:layout_width="70dp"
+                android:layout_height="99dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="start"
+                android:layout_marginRight="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/sss" />
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="2000dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center_vertical"
+                android:text="Courier"
+                android:textAlignment="center"
+                android:textColor="@color/textcolor"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="80dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Employee Id" />
+
+            <EditText
+                android:id="@+id/etempid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"
+                android:text=""
+                tools:ignore="DuplicateIds,InvalidId" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:text="Employee Name" />
+
+            <EditText
+                android:id="@+id/etempname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:enabled="false"
+                android:text=""
+                tools:ignore="InvalidId" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="40dp">
+
+            <android.support.v7.widget.AppCompatButton
+                android:textColor="@color/white"
+                app:backgroundTint="@color/buttonColor"
+                android:id="@+id/btnsend"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_weight=".5"
+                android:text="Send" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:textColor="@color/white"
+                app:backgroundTint="@color/buttonColor"
+                android:id="@+id/btnreceive"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight=".5"
+                android:text="Receive" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/textcolor"
+                app:tabMode="scrollable">
+
+                <android.support.design.widget.TabItem
+
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="              Send                    " />
+
+                <android.support.design.widget.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="               Receive               " />
+
+            </android.support.design.widget.TabLayout>
+
+
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp"
+    android:layout_marginTop="20dp">
+
+    <FrameLayout
+        android:id="@+id/framelayoutfrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+    </FrameLayout>
+</LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    tools:context=".Lost_Activity"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Admin must Tap Id to authorize"
+        />
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tap"/>
+
+<EditText
+    android:layout_marginTop="50dp"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:inputType="number"
+    android:focusedByDefault="true"
+    android:id="@+id/etauthorize"/>
+
+</LinearLayout>
